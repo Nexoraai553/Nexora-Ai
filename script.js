@@ -2,38 +2,44 @@ let currentLang = "en";
 
 const btn = document.getElementById("langBtn");
 
+if (btn) {
+
 btn.onclick = function () {
 
-  if (currentLang === "en") {
+if (currentLang === "en") {
 
-    currentLang = "ar";
-    btn.innerText = "English";
+currentLang = "ar";
+btn.innerText = "English";
 
-    document.querySelector(".logo").innerText = "⚡ كويك AI";
+document.querySelector(".logo").innerText = "⚡ كويك AI";
 
-    document.querySelector("header h1").innerText =
-    "مساعدك الذكي لكل شيء";
+document.querySelector("header h1").innerText =
+"مساعدك الذكي لكل شيء";
 
-    document.querySelector("header p").innerText =
-    "أنشئ واكتب وطوّر أعمالك باستخدام أدوات الذكاء الاصطناعي.";
+document.querySelector("header p").innerText =
+"أنشئ واكتب وطوّر أعمالك باستخدام أدوات الذكاء الاصطناعي.";
 
-  } else {
+}
 
-    currentLang = "en";
-    btn.innerText = "العربية";
+else {
 
-    document.querySelector(".logo").innerText =
-    "⚡ QuickAI";
+currentLang = "en";
+btn.innerText = "العربية";
 
-    document.querySelector("header h1").innerText =
-    "Your AI Assistant For Everything";
+document.querySelector(".logo").innerText =
+"⚡ QuickAI";
 
-    document.querySelector("header p").innerText =
-    "Create, write and improve your work with powerful AI tools.";
+document.querySelector("header h1").innerText =
+"Your AI Assistant For Everything";
 
-  }
+document.querySelector("header p").innerText =
+"Create, write and improve your work with powerful AI tools.";
+
+}
 
 };
+
+}
 
 
 function openSummarizer(){
