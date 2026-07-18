@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Text Summarizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>AI Text Summarizer</h1>
+  <p>Summarize your text quickly.</p>
+</header>
+
+<main>
+  <div class="card">
+    <textarea id="inputText" placeholder="Paste your text here..." rows="10"></textarea>
+
+    <button onclick="summarizeText()">Summarize</button>
+
+    <h3>Result:</h3>
+    <div id="result">
+      Your summary will appear here.
+    </div>
+  </div>
+</main>
+
+<script>
+function summarizeText(){
+  let text = document.getElementById("inputText").value;
+
+  if(text.length < 20){
+    document.getElementById("result").innerHTML =
+    "Please enter a longer text.";
+    return;
+  }
+
+  let words = text.split(" ");
+  let summary = words.slice(0, Math.ceil(words.length / 3)).join(" ");
+
+  document.getElementById("result").innerHTML =
+  summary + "...";
+}
+</script>
+
+</body>
+</html>
