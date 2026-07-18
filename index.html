@@ -3,45 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QuickAI Tools - AI Assistant</title>
+  <title>QuickAI Tools</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-  <h1>QuickAI Tools</h1>
-  <p>Your AI assistant for writing, productivity and creativity.</p>
+  <button id="langBtn">العربية</button>
+
+  <h1 id="title">QuickAI Tools</h1>
+  <p id="description">Your AI assistant for writing, productivity and creativity.</p>
 </header>
 
 <main>
 
   <div class="card">
-    <h2>AI Text Summarizer</h2>
+    <h2 id="summarizer">AI Text Summarizer</h2>
     <p>Summarize articles, documents and long texts using AI.</p>
-    <button>Try Now</button>
+    <button onclick="openSummarizer()">Try Now</button>
   </div>
 
   <div class="card">
-    <h2>AI Email Writer</h2>
+    <h2 id="email">AI Email Writer</h2>
     <p>Create professional emails in seconds.</p>
     <button>Try Now</button>
   </div>
 
   <div class="card">
-    <h2>AI Blog Writer</h2>
+    <h2 id="blog">AI Blog Writer</h2>
     <p>Generate blog ideas and articles with AI.</p>
     <button>Try Now</button>
   </div>
 
   <div class="card">
-    <h2>AI Resume Builder</h2>
+    <h2 id="resume">AI Resume Builder</h2>
     <p>Create a professional CV easily.</p>
     <button>Try Now</button>
   </div>
 
   <div class="card">
-    <h2>AI Translator</h2>
+    <h2 id="translator">AI Translator</h2>
     <p>Translate text between multiple languages.</p>
     <button>Try Now</button>
   </div>
@@ -52,6 +54,8 @@
   <p>© 2026 QuickAI Tools</p>
 </footer>
 
+
+<script src="languages.js"></script>
 <script src="script.js"></script>
 
 </body>
