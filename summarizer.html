@@ -1,49 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Text Summarizer</title>
-  <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI Text Summarizer - QuickAI</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.svg">
+
 </head>
+
 
 <body>
 
+
 <header>
-  <h1>AI Text Summarizer</h1>
-  <p>Summarize your text quickly.</p>
+
+<button id="langBtn">العربية</button>
+
+<div class="logo">
+⚡ QuickAI
+</div>
+
+<h1 id="pageTitle">
+AI Text Summarizer
+</h1>
+
+<p id="pageDesc">
+Summarize your text quickly using AI.
+</p>
+
 </header>
 
+
+
+
 <main>
-  <div class="card">
-    <textarea id="inputText" placeholder="Paste your text here..." rows="10"></textarea>
 
-    <button onclick="summarizeText()">Summarize</button>
 
-    <h3>Result:</h3>
-    <div id="result">
-      Your summary will appear here.
-    </div>
-  </div>
+<div class="card">
+
+
+<textarea id="inputText" placeholder="Write your text here..."></textarea>
+
+
+<button id="summarizeBtn">
+Summarize
+</button>
+
+
+<h2 id="resultTitle">
+Result
+</h2>
+
+
+<p id="result">
+Your summary will appear here.
+</p>
+
+
+</div>
+
+
 </main>
 
-<script>
-function summarizeText(){
-  let text = document.getElementById("inputText").value;
 
-  if(text.length < 20){
-    document.getElementById("result").innerHTML =
-    "Please enter a longer text.";
-    return;
-  }
 
-  let words = text.split(" ");
-  let summary = words.slice(0, Math.ceil(words.length / 3)).join(" ");
 
-  document.getElementById("result").innerHTML =
-  summary + "...";
-}
-</script>
+<footer>
+
+<p>
+© 2026 QuickAI - AI Tools Platform
+</p>
+
+</footer>
+
+
+
+<script src="summarizer.js"></script>
+
 
 </body>
+
 </html>
