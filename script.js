@@ -1,32 +1,51 @@
 let currentLang = "en";
 
-document.getElementById("langBtn").addEventListener("click", function () {
+const langBtn = document.getElementById("langBtn");
 
-  currentLang = currentLang === "en" ? "ar" : "en";
+if(langBtn){
 
-  this.innerText = currentLang === "en" ? "العربية" : "English";
+langBtn.addEventListener("click", function(){
 
-  document.getElementById("title").innerText = translations[currentLang].title;
-  document.getElementById("description").innerText = translations[currentLang].description;
+currentLang = currentLang === "en" ? "ar" : "en";
 
-  document.getElementById("summarizer").innerText = translations[currentLang].summarizer;
-  document.getElementById("summarizerDesc").innerText = translations[currentLang].summarizerDesc;
+langBtn.innerText = currentLang === "en" ? "العربية" : "English";
 
-  document.getElementById("email").innerText = translations[currentLang].email;
-  document.getElementById("emailDesc").innerText = translations[currentLang].emailDesc;
 
-  document.getElementById("blog").innerText = translations[currentLang].blog;
-  document.getElementById("blogDesc").innerText = translations[currentLang].blogDesc;
+document.documentElement.lang = currentLang;
 
-  document.getElementById("resume").innerText = translations[currentLang].resume;
-  document.getElementById("resumeDesc").innerText = translations[currentLang].resumeDesc;
 
-  document.getElementById("translator").innerText = translations[currentLang].translator;
-  document.getElementById("translatorDesc").innerText = translations[currentLang].translatorDesc;
+if(currentLang === "ar"){
+
+document.querySelector(".logo").innerHTML = "⚡ كويك AI";
+
+document.querySelector("header h1").innerHTML =
+"مساعدك الذكي لكل شيء";
+
+document.querySelector("header p").innerHTML =
+"أنشئ واكتب وطوّر أعمالك باستخدام أدوات الذكاء الاصطناعي.";
+
+
+}else{
+
+document.querySelector(".logo").innerHTML = "⚡ QuickAI";
+
+document.querySelector("header h1").innerHTML =
+"Your AI Assistant For Everything";
+
+document.querySelector("header p").innerHTML =
+"Create, write and improve your work with powerful AI tools.";
+
+}
+
 
 });
 
+}
+
+
 
 function openSummarizer(){
-  window.location.href = "summarizer.html";
+
+window.location.href = "summarizer.html";
+
 }
