@@ -3,165 +3,99 @@ let currentLang = "en";
 const btn = document.getElementById("langBtn");
 
 
+function setText(id, text){
+
+const element = document.getElementById(id);
+
+if(element){
+element.innerText = text;
+}
+
+}
+
+
 function changeLanguage(){
 
 const lang = currentLang;
 
 
 // الشعار
-const logo = document.getElementById("logo");
-if(logo){
-logo.innerText = translations[lang].home.logo;
-}
+setText("logo", translations[lang].home.logo);
 
 
 // الصفحة الرئيسية
 if(document.getElementById("homeTitle")){
 
-document.getElementById("homeTitle").innerText =
-translations[lang].home.title;
+setText("homeTitle", translations[lang].home.title);
+setText("homeDesc", translations[lang].home.description);
 
-document.getElementById("homeDesc").innerText =
-translations[lang].home.description;
+setText("tool1", translations[lang].home.tool1);
+setText("desc1", translations[lang].home.tool1Desc);
 
+setText("tool2", translations[lang].home.tool2);
+setText("desc2", translations[lang].home.tool2Desc);
 
-document.getElementById("tool1").innerText =
-translations[lang].home.tool1;
+setText("tool3", translations[lang].home.tool3);
+setText("desc3", translations[lang].home.tool3Desc);
 
-document.getElementById("desc1").innerText =
-translations[lang].home.tool1Desc;
+setText("tool4", translations[lang].home.tool4);
+setText("desc4", translations[lang].home.tool4Desc);
 
-
-document.getElementById("tool2").innerText =
-translations[lang].home.tool2;
-
-document.getElementById("desc2").innerText =
-translations[lang].home.tool2Desc;
-
-
-document.getElementById("tool3").innerText =
-translations[lang].home.tool3;
-
-document.getElementById("desc3").innerText =
-translations[lang].home.tool3Desc;
-
-
-document.getElementById("tool4").innerText =
-translations[lang].home.tool4;
-
-document.getElementById("desc4").innerText =
-translations[lang].home.tool4Desc;
-
-
-document.getElementById("tool5").innerText =
-translations[lang].home.tool5;
-
-document.getElementById("desc5").innerText =
-translations[lang].home.tool5Desc;
+setText("tool5", translations[lang].home.tool5);
+setText("desc5", translations[lang].home.tool5Desc);
 
 }
 
 
-
-// صفحة About
+// About
 if(document.getElementById("whoTitle")){
 
-document.getElementById("pageTitle").innerText =
-translations[lang].about.title;
+setText("pageTitle", translations[lang].about.title);
+setText("pageDesc", translations[lang].about.description);
 
-document.getElementById("pageDesc").innerText =
-translations[lang].about.description;
+setText("whoTitle", translations[lang].about.whoTitle);
+setText("whoDesc", translations[lang].about.whoDesc);
 
-
-document.getElementById("whoTitle").innerText =
-translations[lang].about.whoTitle;
-
-document.getElementById("whoDesc").innerText =
-translations[lang].about.whoDesc;
-
-
-document.getElementById("goalTitle").innerText =
-translations[lang].about.goalTitle;
-
-document.getElementById("goalDesc").innerText =
-translations[lang].about.goalDesc;
+setText("goalTitle", translations[lang].about.goalTitle);
+setText("goalDesc", translations[lang].about.goalDesc);
 
 }
 
 
-
-// صفحة Contact
+// Contact
 if(document.getElementById("emailTitle")){
 
-document.getElementById("pageTitle").innerText =
-translations[lang].contact.title;
+setText("pageTitle", translations[lang].contact.title);
+setText("pageDesc", translations[lang].contact.description);
 
-document.getElementById("pageDesc").innerText =
-translations[lang].contact.description;
+setText("emailTitle", translations[lang].contact.emailTitle);
+setText("emailDesc", translations[lang].contact.email);
 
-
-if(translations[lang].contact.emailTitle){
-
-document.getElementById("emailTitle").innerText =
-translations[lang].contact.emailTitle;
+setText("socialTitle", translations[lang].contact.socialTitle);
+setText("socialDesc", translations[lang].contact.social);
 
 }
 
 
-if(translations[lang].contact.email){
-
-document.getElementById("emailDesc").innerText =
-translations[lang].contact.email;
-
-}
-
-
-if(translations[lang].contact.socialTitle){
-
-document.getElementById("socialTitle").innerText =
-translations[lang].contact.socialTitle;
-
-}
-
-
-if(translations[lang].contact.social){
-
-document.getElementById("socialDesc").innerText =
-translations[lang].contact.social;
-
-}
-
-}
-
-
-
-// صفحة Summarizer
+// Summarizer
 if(document.getElementById("resultTitle")){
 
-document.getElementById("pageTitle").innerText =
-translations[lang].summarizer.title;
-
-document.getElementById("pageDesc").innerText =
-translations[lang].summarizer.description;
-
+setText("pageTitle", translations[lang].summarizer.title);
+setText("pageDesc", translations[lang].summarizer.description);
 
 document.getElementById("inputText").placeholder =
 translations[lang].summarizer.placeholder;
 
+setText("summarizeBtn", translations[lang].summarizer.button);
 
-document.getElementById("summarizeBtn").innerText =
-translations[lang].summarizer.button;
+setText("resultTitle", translations[lang].summarizer.resultTitle);
 
-
-document.getElementById("resultTitle").innerText =
-translations[lang].summarizer.resultTitle;
-
-
-document.getElementById("result").innerText =
-translations[lang].summarizer.result;
+setText("result", translations[lang].summarizer.result);
 
 }
 
+
+// زر اللغة
 
 if(btn){
 
@@ -177,16 +111,7 @@ if(btn){
 
 btn.onclick = function(){
 
-if(currentLang === "en"){
-
-currentLang = "ar";
-
-}else{
-
-currentLang = "en";
-
-}
-
+currentLang = currentLang === "en" ? "ar" : "en";
 
 changeLanguage();
 
@@ -195,13 +120,11 @@ changeLanguage();
 }
 
 
-
 function openSummarizer(){
 
 window.location.href = "summarizer.html";
 
 }
-
 
 
 changeLanguage();
