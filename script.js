@@ -1,3 +1,4 @@
+alert("script working");
 console.log(translations);
 let currentLang = "en";
 
