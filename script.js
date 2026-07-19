@@ -7,6 +7,10 @@ function changeLanguage(){
 
 const lang = currentLang;
 
+
+// الصفحة الرئيسية
+if(document.getElementById("homeTitle")){
+
 document.getElementById("logo").innerText =
 translations[lang].home.logo;
 
@@ -49,7 +53,43 @@ document.getElementById("tool5").innerText =
 translations[lang].home.tool5;
 
 document.getElementById("desc5").innerText =
-translations[lang].home.tool5Desc;
+translations[lang].home.home.tool5Desc;
+
+}
+
+
+
+// صفحة About
+if(document.getElementById("pageTitle")){
+
+document.getElementById("logo").innerText =
+translations[lang].home.logo;
+
+
+document.getElementById("pageTitle").innerText =
+translations[lang].about.title;
+
+
+document.getElementById("pageDesc").innerText =
+translations[lang].about.description;
+
+
+document.getElementById("whoTitle").innerText =
+translations[lang].about.whoTitle;
+
+
+document.getElementById("whoDesc").innerText =
+translations[lang].about.whoDesc;
+
+
+document.getElementById("goalTitle").innerText =
+translations[lang].about.goalTitle;
+
+
+document.getElementById("goalDesc").innerText =
+translations[lang].about.goalDesc;
+
+}
 
 
 btn.innerText = translations[lang].home.button;
@@ -63,15 +103,10 @@ if(btn){
 btn.onclick = function(){
 
 if(currentLang === "en"){
-
 currentLang = "ar";
-
 }else{
-
 currentLang = "en";
-
 }
-
 
 changeLanguage();
 
@@ -80,9 +115,11 @@ changeLanguage();
 }
 
 
-
 function openSummarizer(){
 
 window.location.href = "summarizer.html";
 
 }
+
+
+changeLanguage();
