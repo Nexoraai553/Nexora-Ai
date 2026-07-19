@@ -160,4 +160,14 @@ placeholder: "اكتب النص هنا...",
 
 button: "تلخيص",
 
-resultTitle: "ال
+resultTitle: "النتيجة",
+
+result: "سيظهر الملخص هنا.",
+
+error: "يرجى إدخال نص أطول."
+
+}
+
+}
+
+};
