@@ -39,3 +39,58 @@ const translations = {
     translatorDesc: "ترجم النصوص بين لغات متعددة."
   }
 };
+,
+
+about:{
+
+title:"عن QuickAI",
+
+description:"منصة ذكاء اصطناعي للإبداع وزيادة الإنتاجية.",
+
+whoTitle:"من نحن؟",
+
+whoDesc:"QuickAI منصة تجمع أدوات ذكاء اصطناعي مفيدة في مكان واحد وبطريقة سهلة.",
+
+goalTitle:"هدفنا",
+
+goalDesc:"جعل أدوات الذكاء الاصطناعي سهلة ومتاحة للجميع."
+
+},
+
+contact:{
+
+title:"تواصل معنا",
+
+description:"يسعدنا سماع رأيك واقتراحاتك.",
+
+emailTitle:"📩 البريد الإلكتروني",
+
+email:"support@quickai.com",
+
+socialTitle:"🌍 وسائل التواصل",
+
+social:"قريبًا..."
+
+},
+
+summarizer:{
+
+title:"تلخيص النصوص بالذكاء الاصطناعي",
+
+description:"لخص النصوص بسرعة باستخدام الذكاء الاصطناعي.",
+
+placeholder:"اكتب النص هنا...",
+
+button:"تلخيص",
+
+resultTitle:"النتيجة",
+
+result:"سيظهر الملخص هنا.",
+
+error:"يرجى إدخال نص أطول."
+
+}
+
+}
+
+};
