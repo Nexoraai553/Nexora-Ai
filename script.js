@@ -8,7 +8,7 @@ function changeLanguage(){
 const lang = currentLang;
 
 
-// الشعار موجود بكل الصفحات
+// الشعار
 const logo = document.getElementById("logo");
 if(logo){
 logo.innerText = translations[lang].home.logo;
@@ -62,9 +62,8 @@ translations[lang].home.tool5Desc;
 }
 
 
-
 // صفحة About
-if(document.getElementById("pageTitle")){
+if(document.getElementById("whoTitle")){
 
 document.getElementById("pageTitle").innerText =
 translations[lang].about.title;
@@ -85,6 +84,34 @@ translations[lang].about.goalTitle;
 
 document.getElementById("goalDesc").innerText =
 translations[lang].about.goalDesc;
+
+}
+
+
+// صفحة Contact
+if(document.getElementById("emailTitle")){
+
+document.getElementById("pageTitle").innerText =
+translations[lang].contact.title;
+
+document.getElementById("pageDesc").innerText =
+translations[lang].contact.description;
+
+
+document.getElementById("emailTitle").innerText =
+translations[lang].contact.emailTitle || "📩 Email";
+
+
+document.getElementById("emailDesc").innerText =
+translations[lang].contact.email || "support@quickai.com";
+
+
+document.getElementById("socialTitle").innerText =
+translations[lang].contact.socialTitle || "🌍 Social Media";
+
+
+document.getElementById("socialDesc").innerText =
+translations[lang].contact.social || "Coming soon...";
 
 }
 
