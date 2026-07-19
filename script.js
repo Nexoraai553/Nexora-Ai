@@ -53,10 +53,9 @@ document.getElementById("tool5").innerText =
 translations[lang].home.tool5;
 
 document.getElementById("desc5").innerText =
-translations[lang].home.home.tool5Desc;
+translations[lang].home.tool5Desc;
 
 }
-
 
 
 // صفحة About
@@ -92,7 +91,12 @@ translations[lang].about.goalDesc;
 }
 
 
+// تغيير زر اللغة
+if(btn){
+
 btn.innerText = translations[lang].home.button;
+
+}
 
 }
 
@@ -103,9 +107,13 @@ if(btn){
 btn.onclick = function(){
 
 if(currentLang === "en"){
+
 currentLang = "ar";
+
 }else{
+
 currentLang = "en";
+
 }
 
 changeLanguage();
@@ -113,6 +121,7 @@ changeLanguage();
 };
 
 }
+
 
 
 function openSummarizer(){
