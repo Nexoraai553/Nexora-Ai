@@ -62,7 +62,8 @@ translations[lang].home.tool5Desc;
 }
 
 
-// About
+
+// صفحة About
 if(document.getElementById("whoTitle")){
 
 document.getElementById("pageTitle").innerText =
@@ -71,22 +72,25 @@ translations[lang].about.title;
 document.getElementById("pageDesc").innerText =
 translations[lang].about.description;
 
+
 document.getElementById("whoTitle").innerText =
 translations[lang].about.whoTitle;
 
 document.getElementById("whoDesc").innerText =
 translations[lang].about.whoDesc;
 
+
 document.getElementById("goalTitle").innerText =
 translations[lang].about.goalTitle;
 
 document.getElementById("goalDesc").innerText =
-translations[lang].about.goal.goalDesc;
+translations[lang].about.goalDesc;
 
 }
 
 
-// Contact
+
+// صفحة Contact
 if(document.getElementById("emailTitle")){
 
 document.getElementById("pageTitle").innerText =
@@ -95,10 +99,43 @@ translations[lang].contact.title;
 document.getElementById("pageDesc").innerText =
 translations[lang].contact.description;
 
+
+if(translations[lang].contact.emailTitle){
+
+document.getElementById("emailTitle").innerText =
+translations[lang].contact.emailTitle;
+
 }
 
 
-// Summarizer
+if(translations[lang].contact.email){
+
+document.getElementById("emailDesc").innerText =
+translations[lang].contact.email;
+
+}
+
+
+if(translations[lang].contact.socialTitle){
+
+document.getElementById("socialTitle").innerText =
+translations[lang].contact.socialTitle;
+
+}
+
+
+if(translations[lang].contact.social){
+
+document.getElementById("socialDesc").innerText =
+translations[lang].contact.social;
+
+}
+
+}
+
+
+
+// صفحة Summarizer
 if(document.getElementById("resultTitle")){
 
 document.getElementById("pageTitle").innerText =
@@ -107,14 +144,18 @@ translations[lang].summarizer.title;
 document.getElementById("pageDesc").innerText =
 translations[lang].summarizer.description;
 
+
 document.getElementById("inputText").placeholder =
 translations[lang].summarizer.placeholder;
+
 
 document.getElementById("summarizeBtn").innerText =
 translations[lang].summarizer.button;
 
+
 document.getElementById("resultTitle").innerText =
 translations[lang].summarizer.resultTitle;
+
 
 document.getElementById("result").innerText =
 translations[lang].summarizer.result;
@@ -122,9 +163,10 @@ translations[lang].summarizer.result;
 }
 
 
-// زر اللغة
 if(btn){
+
 btn.innerText = translations[lang].home.button;
+
 }
 
 }
@@ -136,10 +178,15 @@ if(btn){
 btn.onclick = function(){
 
 if(currentLang === "en"){
+
 currentLang = "ar";
+
 }else{
+
 currentLang = "en";
+
 }
+
 
 changeLanguage();
 
@@ -154,6 +201,7 @@ function openSummarizer(){
 window.location.href = "summarizer.html";
 
 }
+
 
 
 changeLanguage();
