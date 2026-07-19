@@ -1,3 +1,4 @@
+console.log(translations);
 let currentLang = "en";
 
 const btn = document.getElementById("langBtn");
