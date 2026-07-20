@@ -92,7 +92,11 @@ button: "Generate Email",
 resultTitle: "Result",
 
 result: "Your email will appear here."
-ar: {
+
+}
+
+},
+  ar: {
 
 home: {
 
@@ -190,6 +194,3 @@ result: "ستظهر الرسالة هنا."
 }
 
 };
-}
-
-},
