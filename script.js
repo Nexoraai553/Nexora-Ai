@@ -2,7 +2,6 @@ let currentLang = "en";
 
 const btn = document.getElementById("langBtn");
 
-
 function setText(id, text){
 
 const element = document.getElementById(id);
@@ -13,17 +12,15 @@ element.innerText = text;
 
 }
 
-
 function changeLanguage(){
 
 const lang = currentLang;
 
-
 // الشعار
 setText("logo", translations[lang].home.logo);
 
+// ================= HOME =================
 
-// الصفحة الرئيسية
 if(document.getElementById("homeTitle")){
 
 setText("homeTitle", translations[lang].home.title);
@@ -46,8 +43,8 @@ setText("desc5", translations[lang].home.tool5Desc);
 
 }
 
+// ================= ABOUT =================
 
-// About
 if(document.getElementById("whoTitle")){
 
 setText("pageTitle", translations[lang].about.title);
@@ -61,8 +58,8 @@ setText("goalDesc", translations[lang].about.goalDesc);
 
 }
 
+// ================= CONTACT =================
 
-// Contact
 if(document.getElementById("emailTitle")){
 
 setText("pageTitle", translations[lang].contact.title);
@@ -76,9 +73,9 @@ setText("socialDesc", translations[lang].contact.social);
 
 }
 
+// ================= SUMMARIZER =================
 
-// Summarizer
-if(document.getElementById("resultTitle")){
+if(document.getElementById("inputText")){
 
 setText("pageTitle", translations[lang].summarizer.title);
 setText("pageDesc", translations[lang].summarizer.description);
@@ -94,6 +91,24 @@ setText("result", translations[lang].summarizer.result);
 
 }
 
+// ================= EMAIL WRITER =================
+
+if(document.getElementById("emailInput")){
+
+setText("pageTitle", translations[lang].emailWriter.title);
+
+setText("pageDesc", translations[lang].emailWriter.description);
+
+document.getElementById("emailInput").placeholder =
+translations[lang].emailWriter.placeholder;
+
+setText("generateBtn", translations[lang].emailWriter.button);
+
+setText("resultTitle", translations[lang].emailWriter.resultTitle);
+
+setText("result", translations[lang].emailWriter.result);
+
+}
 
 // زر اللغة
 
@@ -104,8 +119,7 @@ btn.innerText = translations[lang].home.button;
 }
 
 }
-
-
+// ================= LANGUAGE BUTTON =================
 
 if(btn){
 
@@ -119,6 +133,7 @@ changeLanguage();
 
 }
 
+// ================= NAVIGATION =================
 
 function openSummarizer(){
 
@@ -126,32 +141,50 @@ window.location.href = "summarizer.html";
 
 }
 
+function openEmailWriter(){
+
+window.location.href = "email.html";
+
+}
+
+// ================= START =================
 
 changeLanguage();
-// ===== Dark Mode =====
+
+// ================= DARK MODE =================
 
 const themeBtn = document.getElementById("themeBtn");
 
-// استرجاع الوضع المحفوظ
-if (localStorage.getItem("theme") === "dark") {
-    document.body.classList.add("dark");
-    if (themeBtn) themeBtn.innerText = "☀️";
+if(localStorage.getItem("theme") === "dark"){
+
+document.body.classList.add("dark");
+
+if(themeBtn){
+themeBtn.innerText = "☀️";
 }
 
-if (themeBtn) {
+}
 
-    themeBtn.onclick = function () {
+if(themeBtn){
 
-        document.body.classList.toggle("dark");
+themeBtn.onclick = function(){
 
-        if (document.body.classList.contains("dark")) {
-            localStorage.setItem("theme", "dark");
-            themeBtn.innerText = "☀️";
-        } else {
-            localStorage.setItem("theme", "light");
-            themeBtn.innerText = "🌙";
-        }
+document.body.classList.toggle("dark");
 
-    };
+if(document.body.classList.contains("dark")){
+
+localStorage.setItem("theme","dark");
+
+themeBtn.innerText = "☀️";
+
+}else{
+
+localStorage.setItem("theme","light");
+
+themeBtn.innerText = "🌙";
+
+}
+
+};
 
 }
