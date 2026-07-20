@@ -29,7 +29,6 @@ button: "العربية"
 
 },
 
-
 about: {
 
 title: "About QuickAI",
@@ -40,12 +39,11 @@ whoTitle: "Who are we?",
 
 whoDesc: "QuickAI is a platform that brings useful artificial intelligence tools together in one simple place.",
 
-goalTitle: "Our goal",
+goalTitle: "Our Goal",
 
 goalDesc: "Making AI tools easy and accessible for everyone."
 
 },
-
 
 contact: {
 
@@ -63,7 +61,6 @@ social: "Coming soon..."
 
 },
 
-
 summarizer: {
 
 title: "AI Text Summarizer",
@@ -79,7 +76,7 @@ resultTitle: "Result",
 result: "Your summary will appear here.",
 
 error: "Please enter a longer text."
-  
+
 },
 
 emailWriter: {
@@ -95,9 +92,6 @@ button: "Generate Email",
 resultTitle: "Result",
 
 result: "Your email will appear here."
-
-},
-
 ar: {
 
 home: {
@@ -127,7 +121,6 @@ button: "English"
 
 },
 
-
 about: {
 
 title: "عن QuickAI",
@@ -144,7 +137,6 @@ goalDesc: "جعل أدوات الذكاء الاصطناعي سهلة ومتاح
 
 },
 
-
 contact: {
 
 title: "تواصل معنا",
@@ -160,7 +152,6 @@ socialTitle: "🌍 وسائل التواصل",
 social: "قريبًا..."
 
 },
-
 
 summarizer: {
 
@@ -180,7 +171,7 @@ error: "يرجى إدخال نص أطول."
 
 },
 
-  emailWriter: {
+emailWriter: {
 
 title: "كاتب البريد الإلكتروني بالذكاء الاصطناعي",
 
@@ -194,8 +185,11 @@ resultTitle: "النتيجة",
 
 result: "ستظهر الرسالة هنا."
 
-},
+}
 
 }
 
 };
+}
+
+},
