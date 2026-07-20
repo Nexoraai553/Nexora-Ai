@@ -128,3 +128,30 @@ window.location.href = "summarizer.html";
 
 
 changeLanguage();
+// ===== Dark Mode =====
+
+const themeBtn = document.getElementById("themeBtn");
+
+// استرجاع الوضع المحفوظ
+if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark");
+    if (themeBtn) themeBtn.innerText = "☀️";
+}
+
+if (themeBtn) {
+
+    themeBtn.onclick = function () {
+
+        document.body.classList.toggle("dark");
+
+        if (document.body.classList.contains("dark")) {
+            localStorage.setItem("theme", "dark");
+            themeBtn.innerText = "☀️";
+        } else {
+            localStorage.setItem("theme", "light");
+            themeBtn.innerText = "🌙";
+        }
+
+    };
+
+}
