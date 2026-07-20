@@ -79,12 +79,24 @@ resultTitle: "Result",
 result: "Your summary will appear here.",
 
 error: "Please enter a longer text."
-
-}
-
+  
 },
 
+emailWriter: {
 
+title: "AI Email Writer",
+
+description: "Write professional emails using AI.",
+
+placeholder: "Describe the email you want...",
+
+button: "Generate Email",
+
+resultTitle: "Result",
+
+result: "Your email will appear here."
+
+},
 
 ar: {
 
@@ -166,7 +178,23 @@ result: "سيظهر الملخص هنا.",
 
 error: "يرجى إدخال نص أطول."
 
-}
+},
+
+  emailWriter: {
+
+title: "كاتب البريد الإلكتروني بالذكاء الاصطناعي",
+
+description: "أنشئ رسائل بريد احترافية باستخدام الذكاء الاصطناعي.",
+
+placeholder: "اكتب وصف الرسالة التي تريدها...",
+
+button: "إنشاء الرسالة",
+
+resultTitle: "النتيجة",
+
+result: "ستظهر الرسالة هنا."
+
+},
 
 }
 
