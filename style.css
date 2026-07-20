@@ -431,3 +431,51 @@ color:#cbd5e1;
 body.dark a{
 color:#93c5fd;
 }
+
+/* ===== Navbar ===== */
+
+.navbar{
+position:sticky;
+top:0;
+z-index:1000;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:18px 40px;
+
+background:rgba(255,255,255,.85);
+backdrop-filter:blur(14px);
+
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.nav-links{
+display:flex;
+gap:30px;
+align-items:center;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#0f172a;
+font-weight:bold;
+transition:.3s;
+}
+
+.nav-links a:hover{
+color:#2563eb;
+}
+
+body.dark .navbar{
+background:rgba(15,23,42,.9);
+}
+
+body.dark .nav-links a{
+color:white;
+}
+
+body.dark .nav-links a:hover{
+color:#60a5fa;
+}
