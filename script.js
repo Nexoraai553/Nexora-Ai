@@ -143,7 +143,7 @@ window.location.href = "summarizer.html";
 
 function openEmailWriter(){
 function openBlogWriter(){
-
+  
 window.location.href = "blog.html";
 
 }
