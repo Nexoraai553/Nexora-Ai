@@ -78,3 +78,44 @@ Your email will appear here.
 </div>
 
 </main>
+
+  <footer>
+
+<p>
+<a href="about.html">About</a> |
+<a href="contact.html">Contact</a>
+</p>
+
+<p>© 2026 QuickAI - AI Tools Platform</p>
+
+</footer>
+
+<script src="languages.js"></script>
+<script src="script.js"></script>
+
+<script>
+
+const generateBtn = document.getElementById("generateBtn");
+
+generateBtn.onclick = function(){
+
+const input = document.getElementById("emailInput").value.trim();
+
+if(input === ""){
+
+document.getElementById("result").innerText =
+"Please describe the email you want.";
+
+return;
+
+}
+
+document.getElementById("result").innerText =
+"This feature will be connected to AI soon.\n\nYour request:\n" + input;
+
+};
+
+</script>
+
+</body>
+</html>
