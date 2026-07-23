@@ -109,6 +109,24 @@ if (btn) {
         changeLanguage();
     };
 }
+// ================= BLOG WRITER =================
+
+if(document.getElementById("blogInput")){
+
+    setText("pageTitle", translations[lang].blogWriter.title);
+
+    setText("pageDesc", translations[lang].blogWriter.description);
+
+    document.getElementById("blogInput").placeholder =
+    translations[lang].blogWriter.placeholder;
+
+    setText("generateBlogBtn", translations[lang].blogWriter.button);
+
+    setText("resultTitle", translations[lang].blogWriter.resultTitle);
+
+    setText("blogResult", translations[lang].blogWriter.result);
+
+}
 // ================= NAVIGATION =================
 
 function openSummarizer() {
