@@ -36,7 +36,6 @@
 <div class="top-buttons">
 
 <button id="themeBtn">🌙</button>
-
 <button id="langBtn">العربية</button>
 
 </div>
@@ -71,15 +70,14 @@ Generate Blog
 Result
 </h2>
 
-<p id="result">
+<p id="blogResult">
 Your blog will appear here.
 </p>
 
 </div>
 
 </main>
-
-  <footer>
+<footer>
 
 <p>
 <a href="about.html">About</a> |
@@ -103,15 +101,19 @@ const input = document.getElementById("blogInput").value.trim();
 
 if(input === ""){
 
-document.getElementById("result").innerText =
-"Please enter a blog topic.";
+document.getElementById("blogResult").innerText =
+currentLang === "ar"
+? "يرجى كتابة موضوع للمقال."
+: "Please enter a blog topic.";
 
 return;
 
 }
 
-document.getElementById("result").innerText =
-"This feature will be connected to AI soon.\n\nBlog topic:\n" + input;
+document.getElementById("blogResult").innerText =
+currentLang === "ar"
+? "سيتم ربط هذه الأداة بالذكاء الاصطناعي قريبًا.\n\nموضوع المقال:\n" + input
+: "This feature will be connected to AI soon.\n\nBlog topic:\n" + input;
 
 };
 
