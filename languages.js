@@ -96,6 +96,21 @@ result: "Your email will appear here."
 }
 
 },
+  blogWriter: {
+
+title: "AI Blog Writer",
+
+description: "Generate blog posts using AI.",
+
+placeholder: "Write your blog topic...",
+
+button: "Generate Blog",
+
+resultTitle: "Result",
+
+result: "Your blog will appear here."
+
+},
   ar: {
 
 home: {
@@ -189,8 +204,22 @@ resultTitle: "النتيجة",
 
 result: "ستظهر الرسالة هنا."
 
-}
+},
+blogWriter: {
 
+title: "كاتب المقالات بالذكاء الاصطناعي",
+
+description: "أنشئ مقالات احترافية باستخدام الذكاء الاصطناعي.",
+
+placeholder: "اكتب موضوع المقال...",
+
+button: "إنشاء المقال",
+
+resultTitle: "النتيجة",
+
+result: "سيظهر المقال هنا."
+
+},
 }
 
 };
