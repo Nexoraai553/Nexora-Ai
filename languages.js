@@ -112,7 +112,22 @@ result: "Your blog will appear here."
 }
 
 },
+  
+resumeBuilder: {
 
+title: "AI Resume Builder",
+
+description: "Create a professional resume using AI.",
+
+placeholder: "Write your information...",
+
+button: "Generate Resume",
+
+resultTitle: "Result",
+
+result: "Your resume will appear here."
+
+},
 ar: {
 
 home: {
@@ -221,7 +236,22 @@ resultTitle: "النتيجة",
 
 result: "سيظهر المقال هنا."
 
-}
+},
+  resumeBuilder: {
+
+title: "منشئ السيرة الذاتية بالذكاء الاصطناعي",
+
+description: "أنشئ سيرة ذاتية احترافية باستخدام الذكاء الاصطناعي.",
+
+placeholder: "اكتب معلوماتك هنا...",
+
+button: "إنشاء السيرة الذاتية",
+
+resultTitle: "النتيجة",
+
+result: "ستظهر السيرة الذاتية هنا."
+
+},
 }
 
 };
