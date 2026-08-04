@@ -116,6 +116,24 @@ if(document.getElementById("blogInput")){
     setText("blogResult", translations[lang].blogWriter.result);
 
 }
+    // ================= RESUME BUILDER =================
+
+if(document.getElementById("resumeInput")){
+
+    setText("pageTitle", translations[lang].resumeBuilder.title);
+
+    setText("pageDesc", translations[lang].resumeBuilder.description);
+
+    document.getElementById("resumeInput").placeholder =
+    translations[lang].resumeBuilder.placeholder;
+
+    setText("generateResumeBtn", translations[lang].resumeBuilder.button);
+
+    setText("resultTitle", translations[lang].resumeBuilder.resultTitle);
+
+    setText("resumeResult", translations[lang].resumeBuilder.result);
+
+}
     if (btn) {
         btn.innerText = translations[lang].home.button;
     }
