@@ -47,7 +47,16 @@ function changeLanguage() {
         setText("pageTitle", translations[lang].about.title);
         setText("pageDesc", translations[lang].about.description);
 
-        setText("whoTitle",
+        setText("whoTitle", translations[lang].about.whoTitle);
+setText("whoDesc", translations[lang].about.whoDesc);
+
+setText("missionTitle", translations[lang].about.missionTitle);
+setText("missionDesc", translations[lang].about.missionDesc);
+
+setText("whyTitle", translations[lang].about.whyTitle);
+setText("whyDesc", translations[lang].about.whyDesc);
+
+}
                     // ================= SUMMARIZER =================
 
     if (document.getElementById("inputText")) {
