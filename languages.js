@@ -93,10 +93,9 @@ resultTitle: "Result",
 
 result: "Your email will appear here."
 
-}
-
 },
-  blogWriter: {
+
+blogWriter: {
 
 title: "AI Blog Writer",
 
@@ -110,8 +109,11 @@ resultTitle: "Result",
 
 result: "Your blog will appear here."
 
+}
+
 },
-  ar: {
+
+ar: {
 
 home: {
 
@@ -219,7 +221,7 @@ resultTitle: "النتيجة",
 
 result: "سيظهر المقال هنا."
 
-},
+}
 }
 
 };
