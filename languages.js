@@ -126,7 +126,8 @@ button: "Generate Resume",
 resultTitle: "Result",
 
 result: "Your resume will appear here."
-
+}
+  
 },
 ar: {
 
