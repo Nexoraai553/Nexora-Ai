@@ -124,10 +124,24 @@ resultTitle: "Result",
 
 result: "Your resume will appear here."
 
-}
-
 },
 
+  translator: {
+
+title: "AI Translator",
+
+description: "Translate text using AI.",
+
+placeholder: "Write your text...",
+
+button: "Translate",
+
+resultTitle: "Result",
+
+result: "Your translation will appear here."
+
+},
+},
 ar: {
 
 home: {
@@ -252,8 +266,23 @@ resultTitle: "النتيجة",
 
 result: "ستظهر السيرة الذاتية هنا."
 
-}
+},
+  
+translator: {
 
+title: "المترجم بالذكاء الاصطناعي",
+
+description: "ترجم النصوص باستخدام الذكاء الاصطناعي.",
+
+placeholder: "اكتب النص هنا...",
+
+button: "ترجمة",
+
+resultTitle: "النتيجة",
+
+result: "ستظهر الترجمة هنا."
+
+},
 }
 
 };  
