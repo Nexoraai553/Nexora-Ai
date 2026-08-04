@@ -96,38 +96,23 @@ result: "Your email will appear here."
 },
 
 blogWriter: {
-
-title: "AI Blog Writer",
-
-description: "Generate blog posts using AI.",
-
-placeholder: "Write your blog topic...",
-
-button: "Generate Blog",
-
-resultTitle: "Result",
-
-result: "Your blog will appear here."
-
-}
-
+    title: "AI Blog Writer",
+    description: "Generate blog posts using AI.",
+    placeholder: "Write your blog topic...",
+    button: "Generate Blog",
+    resultTitle: "Result",
+    result: "Your blog will appear here."
 },
-  
+
 resumeBuilder: {
-
-title: "AI Resume Builder",
-
-description: "Create a professional resume using AI.",
-
-placeholder: "Write your information...",
-
-button: "Generate Resume",
-
-resultTitle: "Result",
-
-result: "Your resume will appear here."
+    title: "AI Resume Builder",
+    description: "Create a professional resume using AI.",
+    placeholder: "Write your information...",
+    button: "Generate Resume",
+    resultTitle: "Result",
+    result: "Your resume will appear here."
 }
-  
+
 },
 ar: {
 
