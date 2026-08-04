@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI Translator - QuickAI</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.svg">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo" id="logo">
+⚡ QuickAI
+</div>
+
+<div class="nav-links">
+
+<a href="index.html">Home</a>
+
+<a href="about.html">About</a>
+
+<a href="contact.html">Contact</a>
+
+</div>
+
+<div class="top-buttons">
+
+<button id="themeBtn">🌙</button>
+<button id="langBtn">العربية</button>
+
+</div>
+
+</nav>
+
+<section class="hero">
+
+<h1 id="pageTitle">
+AI Translator
+</h1>
+
+<p id="pageDesc">
+Translate text using AI.
+</p>
+
+</section>
+
+</header>
+
+<main>
+
+<div class="card">
+  <textarea id="translatorInput" placeholder="Write your text..."></textarea>
+
+<button id="translateBtn">
+Translate
+</button>
+
+<h2 id="resultTitle">
+Result
+</h2>
+
+<p id="translatorResult">
+Your translation will appear here.
+</p>
+
+</div>
+
+</main>
+
+<footer>
+
+<p>
+<a href="about.html">About</a> |
+<a href="contact.html">Contact</a>
+</p>
+
+<p>© 2026 QuickAI - AI Tools Platform</p>
+
+</footer>
+
+<script src="languages.js"></script>
+<script src="script.js"></script>
+
+<script>
+
+const translateBtn = document.getElementById("translateBtn");
+
+translateBtn.onclick = function(){
+
+const input = document.getElementById("translatorInput").value.trim();
+
+if(input === ""){
+
+document.getElementById("translatorResult").innerText =
+currentLang === "ar"
+? "يرجى كتابة نص للترجمة."
+: "Please enter text to translate.";
+
+return;
+
+}
+
+document.getElementById("translatorResult").innerText =
+currentLang === "ar"
+? "سيتم ربط هذه الأداة بالذكاء الاصطناعي قريبًا.\n\nالنص:\n" + input
+: "This feature will be connected to AI soon.\n\nText:\n" + input;
+
+};
+
+</script>
+
+</body>
+</html>
