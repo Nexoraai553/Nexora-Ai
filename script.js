@@ -4,7 +4,6 @@ const btn = document.getElementById("langBtn");
 
 function setText(id, text) {
     const element = document.getElementById(id);
-
     if (element) {
         element.innerText = text;
     }
@@ -14,8 +13,7 @@ function changeLanguage() {
 
     const lang = currentLang;
 
-    
-    // Logo
+    // ================= LOGO =================
     setText("logo", translations[lang].home.logo);
 
     // ================= HOME =================
@@ -39,6 +37,7 @@ function changeLanguage() {
 
         setText("tool5", translations[lang].home.tool5);
         setText("desc5", translations[lang].home.tool5Desc);
+
     }
 
     // ================= ABOUT =================
@@ -48,28 +47,8 @@ function changeLanguage() {
         setText("pageTitle", translations[lang].about.title);
         setText("pageDesc", translations[lang].about.description);
 
-        setText("whoTitle", translations[lang].about.whoTitle);
-        setText("whoDesc", translations[lang].about.whoDesc);
-
-        setText("goalTitle", translations[lang].about.goalTitle);
-        setText("goalDesc", translations[lang].about.goalDesc);
-    }
-
-    // ================= CONTACT =================
-
-    if (document.getElementById("emailTitle")) {
-
-        setText("pageTitle", translations[lang].contact.title);
-        setText("pageDesc", translations[lang].contact.description);
-
-        setText("emailTitle", translations[lang].contact.emailTitle);
-        setText("emailDesc", translations[lang].contact.email);
-
-        setText("socialTitle", translations[lang].contact.socialTitle);
-        setText("socialDesc", translations[lang].contact.social);
-    }
-
-    // ================= SUMMARIZER =================
+        setText("whoTitle",
+                    // ================= SUMMARIZER =================
 
     if (document.getElementById("inputText")) {
 
@@ -82,6 +61,7 @@ function changeLanguage() {
         setText("summarizeBtn", translations[lang].summarizer.button);
         setText("resultTitle", translations[lang].summarizer.resultTitle);
         setText("result", translations[lang].summarizer.result);
+
     }
 
     // ================= EMAIL WRITER =================
@@ -97,54 +77,60 @@ function changeLanguage() {
         setText("generateBtn", translations[lang].emailWriter.button);
         setText("resultTitle", translations[lang].emailWriter.resultTitle);
         setText("result", translations[lang].emailWriter.result);
+
     }
-// ================= BLOG WRITER =================
 
-if(document.getElementById("blogInput")){
+    // ================= BLOG WRITER =================
 
-    setText("pageTitle", translations[lang].blogWriter.title);
+    if (document.getElementById("blogInput")) {
 
-    setText("pageDesc", translations[lang].blogWriter.description);
+        setText("pageTitle", translations[lang].blogWriter.title);
+        setText("pageDesc", translations[lang].blogWriter.description);
 
-    document.getElementById("blogInput").placeholder =
-    translations[lang].blogWriter.placeholder;
+        document.getElementById("blogInput").placeholder =
+            translations[lang].blogWriter.placeholder;
 
-    setText("generateBlogBtn", translations[lang].blogWriter.button);
+        setText("generateBlogBtn", translations[lang].blogWriter.button);
+        setText("resultTitle", translations[lang].blogWriter.resultTitle);
+        setText("blogResult", translations[lang].blogWriter.result);
 
-    setText("resultTitle", translations[lang].blogWriter.resultTitle);
+    }
 
-    setText("blogResult", translations[lang].blogWriter.result);
-
-}
     // ================= RESUME BUILDER =================
 
-if(document.getElementById("resumeInput")){
+    if (document.getElementById("resumeInput")) {
 
-    setText("pageTitle", translations[lang].resumeBuilder.title);
+        setText("pageTitle", translations[lang].resumeBuilder.title);
+        setText("pageDesc", translations[lang].resumeBuilder.description);
 
-    setText("pageDesc", translations[lang].resumeBuilder.description);
+        document.getElementById("resumeInput").placeholder =
+            translations[lang].resumeBuilder.placeholder;
 
-    document.getElementById("resumeInput").placeholder =
-    translations[lang].resumeBuilder.placeholder;
+        setText("generateResumeBtn", translations[lang].resumeBuilder.button);
+        setText("resultTitle", translations[lang].resumeBuilder.resultTitle);
+        setText("resumeResult", translations[lang].resumeBuilder.result);
 
-    setText("generateResumeBtn", translations[lang].resumeBuilder.button);
+    }
 
-    setText("resultTitle", translations[lang].resumeBuilder.resultTitle);
-
-    setText("resumeResult", translations[lang].resumeBuilder.result);
-
-}
     if (btn) {
         btn.innerText = translations[lang].home.button;
     }
+
 }
+    // ================= LANGUAGE BUTTON =================
 
 if (btn) {
+
     btn.onclick = function () {
+
         currentLang = currentLang === "en" ? "ar" : "en";
+
         changeLanguage();
+
     };
+
 }
+
 // ================= NAVIGATION =================
 
 function openSummarizer() {
@@ -159,10 +145,10 @@ function openBlogWriter() {
     window.location.href = "blog.html";
 }
 
-function openResumeBuilder(){
-
+function openResumeBuilder() {
     window.location.href = "resume.html";
 }
+
 // ================= START =================
 
 changeLanguage();
@@ -173,6 +159,7 @@ const themeBtn = document.getElementById("themeBtn");
 
 if (themeBtn) {
 
+    // استرجاع آخر وضع محفوظ
     if (localStorage.getItem("theme") === "dark") {
         document.body.classList.add("dark");
         themeBtn.innerText = "☀️";
@@ -180,7 +167,7 @@ if (themeBtn) {
         themeBtn.innerText = "🌙";
     }
 
-    themeBtn.addEventListener("click", function () {
+    themeBtn.onclick = function () {
 
         document.body.classList.toggle("dark");
 
@@ -192,6 +179,6 @@ if (themeBtn) {
             themeBtn.innerText = "🌙";
         }
 
-    });
+    };
 
 }
