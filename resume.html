@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI Resume Builder - QuickAI</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.svg">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo" id="logo">
+⚡ QuickAI
+</div>
+
+<div class="nav-links">
+
+<a href="index.html">Home</a>
+
+<a href="about.html">About</a>
+
+<a href="contact.html">Contact</a>
+
+</div>
+
+<div class="top-buttons">
+
+<button id="themeBtn">🌙</button>
+<button id="langBtn">العربية</button>
+
+</div>
+
+</nav>
+
+<section class="hero">
+
+<h1 id="pageTitle">
+AI Resume Builder
+</h1>
+
+<p id="pageDesc">
+Create a professional resume using AI.
+</p>
+
+</section>
+
+</header>
+
+<main>
+
+<div class="card">
+
+<textarea id="resumeInput" placeholder="Write your information..."></textarea>
+
+<button id="generateResumeBtn">
+Generate Resume
+</button>
+
+<h2 id="resultTitle">
+Result
+</h2>
+
+<p id="resumeResult">
+Your resume will appear here.
+</p>
+
+</div>
+
+</main>
+
+<footer>
+
+<p>
+<a href="about.html">About</a> |
+<a href="contact.html">Contact</a>
+</p>
+
+<p>© 2026 QuickAI - AI Tools Platform</p>
+
+</footer>
+
+<script src="languages.js"></script>
+<script src="script.js"></script>
+
+<script>
+
+const generateResumeBtn = document.getElementById("generateResumeBtn");
+
+generateResumeBtn.onclick = function(){
+
+const input = document.getElementById("resumeInput").value.trim();
+
+if(input === ""){
+
+document.getElementById("resumeResult").innerText =
+currentLang === "ar"
+? "يرجى كتابة معلومات السيرة الذاتية."
+: "Please enter your resume information.";
+
+return;
+
+}
+
+document.getElementById("resumeResult").innerText =
+currentLang === "ar"
+? "سيتم ربط هذه الأداة بالذكاء الاصطناعي قريبًا.\n\nالمعلومات:\n" + input
+: "This feature will be connected to AI soon.\n\nInformation:\n" + input;
+
+};
+
+</script>
+
+</body>
+</html>
