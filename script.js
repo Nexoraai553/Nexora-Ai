@@ -97,18 +97,6 @@ function changeLanguage() {
         setText("resultTitle", translations[lang].emailWriter.resultTitle);
         setText("result", translations[lang].emailWriter.result);
     }
-
-    if (btn) {
-        btn.innerText = translations[lang].home.button;
-    }
-}
-
-if (btn) {
-    btn.onclick = function () {
-        currentLang = currentLang === "en" ? "ar" : "en";
-        changeLanguage();
-    };
-}
 // ================= BLOG WRITER =================
 
 if(document.getElementById("blogInput")){
@@ -126,6 +114,17 @@ if(document.getElementById("blogInput")){
 
     setText("blogResult", translations[lang].blogWriter.result);
 
+}
+    if (btn) {
+        btn.innerText = translations[lang].home.button;
+    }
+}
+
+if (btn) {
+    btn.onclick = function () {
+        currentLang = currentLang === "en" ? "ar" : "en";
+        changeLanguage();
+    };
 }
 // ================= NAVIGATION =================
 
