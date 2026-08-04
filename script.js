@@ -171,32 +171,27 @@ changeLanguage();
 
 const themeBtn = document.getElementById("themeBtn");
 
-if (localStorage.getItem("theme") === "dark") {
-    document.body.classList.add("dark");
-
-    if (themeBtn) {
-        themeBtn.innerText = "☀️";
-    }
-}
-
 if (themeBtn) {
 
-    themeBtn.onclick = function () {
+    if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("dark");
+        themeBtn.innerText = "☀️";
+    } else {
+        themeBtn.innerText = "🌙";
+    }
+
+    themeBtn.addEventListener("click", function () {
 
         document.body.classList.toggle("dark");
 
         if (document.body.classList.contains("dark")) {
-
             localStorage.setItem("theme", "dark");
             themeBtn.innerText = "☀️";
-
         } else {
-
             localStorage.setItem("theme", "light");
             themeBtn.innerText = "🌙";
-
         }
 
-    };
+    });
 
 }
