@@ -158,6 +158,12 @@ function openResumeBuilder() {
     window.location.href = "resume.html";
 }
 
+function openTranslator(){
+
+    window.location.href = "translator.html";
+
+}
+
 // ================= START =================
 
 changeLanguage();
