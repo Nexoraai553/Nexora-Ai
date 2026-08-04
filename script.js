@@ -14,6 +14,7 @@ function changeLanguage() {
 
     const lang = currentLang;
 
+    
     // Logo
     setText("logo", translations[lang].home.logo);
 
@@ -140,6 +141,10 @@ function openBlogWriter() {
     window.location.href = "blog.html";
 }
 
+function openResumeBuilder(){
+
+    window.location.href = "resume.html";
+}
 // ================= START =================
 
 changeLanguage();
