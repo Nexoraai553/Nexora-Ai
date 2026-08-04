@@ -107,23 +107,43 @@ setText("whyDesc", translations[lang].about.whyDesc);
 
     // ================= RESUME BUILDER =================
 
-    if (document.getElementById("resumeInput")) {
+if (document.getElementById("resumeInput")) {
 
-        setText("pageTitle", translations[lang].resumeBuilder.title);
-        setText("pageDesc", translations[lang].resumeBuilder.description);
+    setText("pageTitle", translations[lang].resumeBuilder.title);
+    setText("pageDesc", translations[lang].resumeBuilder.description);
 
-        document.getElementById("resumeInput").placeholder =
-            translations[lang].resumeBuilder.placeholder;
+    document.getElementById("resumeInput").placeholder =
+        translations[lang].resumeBuilder.placeholder;
 
-        setText("generateResumeBtn", translations[lang].resumeBuilder.button);
-        setText("resultTitle", translations[lang].resumeBuilder.resultTitle);
-        setText("resumeResult", translations[lang].resumeBuilder.result);
+    setText("generateResumeBtn", translations[lang].resumeBuilder.button);
+    setText("resultTitle", translations[lang].resumeBuilder.resultTitle);
+    setText("resumeResult", translations[lang].resumeBuilder.result);
 
-    }
+}
 
-    if (btn) {
-        btn.innerText = translations[lang].home.button;
-    }
+// ================= TRANSLATOR =================
+
+if(document.getElementById("translatorInput")){
+
+    setText("pageTitle", translations[lang].translator.title);
+
+    setText("pageDesc", translations[lang].translator.description);
+
+    document.getElementById("translatorInput").placeholder =
+    translations[lang].translator.placeholder;
+
+    setText("translateBtn", translations[lang].translator.button);
+
+    setText("resultTitle", translations[lang].translator.resultTitle);
+
+    setText("translatorResult", translations[lang].translator.result);
+
+}
+
+// زر اللغة يكون هنا
+if (btn) {
+    btn.innerText = translations[lang].home.button;
+}
 
 }
     // ================= LANGUAGE BUTTON =================
