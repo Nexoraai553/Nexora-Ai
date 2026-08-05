@@ -141,6 +141,40 @@ resultTitle: "Result",
 result: "Your translation will appear here."
 
 },
+
+  pricing: {
+
+title: "Pricing",
+
+description: "One subscription. Unlimited access to all AI tools.",
+
+freeTitle: "Free",
+freeDesc: "Perfect for trying QuickAI.",
+free1: "✔ Access to all AI tools",
+free2: "✔ 10 AI requests per day",
+free3: "✔ Standard speed",
+free4: "✔ Community support",
+freeBtn: "Start Free",
+
+proTitle: "Pro ⭐",
+proDesc: "Unlimited access to every AI tool.",
+pro1: "✔ Unlimited AI requests",
+pro2: "✔ Access to all AI tools",
+pro3: "✔ Faster AI responses",
+pro4: "✔ Priority support",
+pro5: "✔ Early access to new features",
+proBtn: "Upgrade to Pro",
+
+businessTitle: "Business",
+businessDesc: "Perfect for companies and teams.",
+business1: "✔ Everything in Pro",
+business2: "✔ Team accounts",
+business3: "✔ API access",
+business4: "✔ Premium support",
+business5: "✔ Admin dashboard",
+businessBtn: "Contact Sales"
+
+},
 },
 ar: {
 
@@ -281,6 +315,40 @@ button: "ترجمة",
 resultTitle: "النتيجة",
 
 result: "ستظهر الترجمة هنا."
+
+},
+
+  pricing: {
+
+title: "الأسعار",
+
+description: "اشتراك واحد يمنحك وصولًا غير محدود إلى جميع أدوات الذكاء الاصطناعي.",
+
+freeTitle: "مجاني",
+freeDesc: "مثالي لتجربة QuickAI.",
+free1: "✔ الوصول إلى جميع أدوات الذكاء الاصطناعي",
+free2: "✔ 10 طلبات ذكاء اصطناعي يوميًا",
+free3: "✔ سرعة عادية",
+free4: "✔ دعم المجتمع",
+freeBtn: "ابدأ مجانًا",
+
+proTitle: "احترافي ⭐",
+proDesc: "وصول غير محدود إلى جميع أدوات الذكاء الاصطناعي.",
+pro1: "✔ طلبات غير محدودة",
+pro2: "✔ جميع الأدوات متاحة",
+pro3: "✔ استجابات أسرع",
+pro4: "✔ دعم ذو أولوية",
+pro5: "✔ الوصول المبكر للميزات الجديدة",
+proBtn: "الترقية إلى Pro",
+
+businessTitle: "الأعمال",
+businessDesc: "مثالي للشركات والفرق.",
+business1: "✔ جميع ميزات Pro",
+business2: "✔ حسابات للفريق",
+business3: "✔ الوصول إلى API",
+business4: "✔ دعم مميز",
+business5: "✔ لوحة تحكم للإدارة",
+businessBtn: "تواصل مع المبيعات"
 
 },
 }
