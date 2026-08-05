@@ -140,6 +140,40 @@ if(document.getElementById("translatorInput")){
 
 }
 
+    // ================= PRICING =================
+
+if (document.getElementById("freeTitle")) {
+
+    setText("pageTitle", translations[lang].pricing.title);
+    setText("pageDesc", translations[lang].pricing.description);
+
+    setText("freeTitle", translations[lang].pricing.freeTitle);
+    setText("freeDesc", translations[lang].pricing.freeDesc);
+    setText("free1", translations[lang].pricing.free1);
+    setText("free2", translations[lang].pricing.free2);
+    setText("free3", translations[lang].pricing.free3);
+    setText("free4", translations[lang].pricing.free4);
+    setText("freeBtn", translations[lang].pricing.freeBtn);
+
+    setText("proTitle", translations[lang].pricing.proTitle);
+    setText("proDesc", translations[lang].pricing.proDesc);
+    setText("pro1", translations[lang].pricing.pro1);
+    setText("pro2", translations[lang].pricing.pro2);
+    setText("pro3", translations[lang].pricing.pro3);
+    setText("pro4", translations[lang].pricing.pro4);
+    setText("pro5", translations[lang].pricing.pro5);
+    setText("proBtn", translations[lang].pricing.proBtn);
+
+    setText("businessTitle", translations[lang].pricing.businessTitle);
+    setText("businessDesc", translations[lang].pricing.businessDesc);
+    setText("business1", translations[lang].pricing.business1);
+    setText("business2", translations[lang].pricing.business2);
+    setText("business3", translations[lang].pricing.business3);
+    setText("business4", translations[lang].pricing.business4);
+    setText("business5", translations[lang].pricing.business5);
+    setText("businessBtn", translations[lang].pricing.businessBtn);
+
+}
 // زر اللغة يكون هنا
 if (btn) {
     btn.innerText = translations[lang].home.button;
