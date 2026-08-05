@@ -1,0 +1,15 @@
+{
+  "name": "quickai-backend",
+  "version": "1.0.0",
+  "description": "QuickAI Backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@google/genai": "^1.14.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^4.21.2"
+  }
+}
