@@ -15,6 +15,10 @@ function changeLanguage() {
 
     // ================= LOGO =================
     setText("logo", translations[lang].home.logo);
+    setText("homeNav", "الرئيسية");
+setText("aboutNav", "من نحن");
+setText("pricingNav", "الأسعار");
+setText("contactNav", "تواصل معنا");
 
     // ================= HOME =================
 
