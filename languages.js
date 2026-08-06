@@ -25,6 +25,11 @@ tool4Desc: "Build your professional CV easily.",
 tool5: "🌍 AI Translator",
 tool5Desc: "Translate text between many languages.",
 
+  homeNav: "Home",
+aboutNav: "About",
+pricingNav: "Pricing",
+contactNav: "Contact",
+  
 button: "العربية"
 
 },
@@ -201,6 +206,11 @@ tool4Desc: "أنشئ سيرتك الذاتية بسهولة.",
 tool5: "🌍 المترجم بالذكاء الاصطناعي",
 tool5Desc: "ترجم النصوص بين لغات متعددة.",
 
+  homeNav: "الرئيسية",
+aboutNav: "من نحن",
+pricingNav: "الأسعار",
+contactNav: "تواصل معنا",
+  
 button: "English"
 
 },
