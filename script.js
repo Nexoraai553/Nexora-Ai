@@ -174,6 +174,13 @@ if (document.getElementById("freeTitle")) {
     setText("businessBtn", translations[lang].pricing.businessBtn);
 
 }
+
+    // ================= NAVIGATION TEXT =================
+
+setText("homeNav", translations[lang].home.homeNav);
+setText("aboutNav", translations[lang].home.aboutNav);
+setText("pricingNav", translations[lang].home.pricingNav);
+setText("contactNav", translations[lang].home.contactNav);
 // زر اللغة يكون هنا
 if (btn) {
     btn.innerText = translations[lang].home.button;
