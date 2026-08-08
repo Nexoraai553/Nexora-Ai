@@ -1,121 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>AI Email Writer - QuickAI</title>
-
-<link rel="stylesheet" href="style.css">
-<link rel="icon" href="favicon.svg">
-
-</head>
-
-<body>
-
-<header>
-
-<nav class="navbar">
-
-<div class="logo" id="logo">
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>AI Email Writer - QuickAI</title><link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.svg"></head><body><header><nav class="navbar"><div class="logo" id="logo">
 ⚡ QuickAI
-</div>
+</div><div class="nav-links"><a id="homeNav" href="index.html">Home</a>
 
-<div class="nav-links">
+<a id="aboutNav" href="about.html">About</a>
 
-<a href="index.html">Home</a>
+<a id="pricingNav" href="pricing.html">Pricing</a>
 
-<a href="about.html">About</a>
+<a id="contactNav" href="contact.html">Contact</a>
 
-<a href="contact.html">Contact</a>
-
-</div>
-
-<div class="top-buttons">
-
-<button id="themeBtn">🌙</button>
+</div><div class="top-buttons"><button id="themeBtn">🌙</button>
 
 <button id="langBtn">العربية</button>
 
-</div>
-
-</nav>
-
-<section class="hero">
-
-<h1 id="pageTitle">
+</div></nav><section class="hero"><h1 id="pageTitle">
 AI Email Writer
-</h1>
-
-<p id="pageDesc">
+</h1><p id="pageDesc">
 Write professional emails using AI.
-</p>
-
-</section>
-
-</header>
-
-<main>
-
-<div class="card">
-
-<textarea id="emailInput" placeholder="Describe the email you want..."></textarea>
-
-<button id="generateBtn">
+</p></section></header><main><div class="card"><textarea
+    id="emailInput"
+    placeholder="Describe the email you want..."
+></textarea><button id="generateBtn">
 Generate Email
-</button>
-
-<h2 id="resultTitle">
+</button><h2 id="resultTitle">
 Result
-</h2>
-
-<p id="result">
+</h2><p id="result">
 Your email will appear here.
-</p>
+</p></div></main><footer><p><a href="about.html">About</a> |
 
-</div>
+<a href="pricing.html">Pricing</a> |
 
-</main>
-
-  <footer>
-
-<p>
-<a href="about.html">About</a> |
 <a href="contact.html">Contact</a>
-</p>
 
-<p>© 2026 QuickAI - AI Tools Platform</p>
-
-</footer>
-
-<script src="languages.js"></script>
-<script src="script.js"></script>
-
-<script>
+</p><p>
+© 2026 QuickAI - AI Tools Platform
+</p></footer><script src="languages.js"></script><script src="script.js"></script><script>
 
 const generateBtn = document.getElementById("generateBtn");
 
-generateBtn.onclick = function(){
+if (generateBtn) {
 
-const input = document.getElementById("emailInput").value.trim();
+    generateBtn.onclick = function() {
 
-if(input === ""){
+        const input =
+            document.getElementById("emailInput").value.trim();
 
-document.getElementById("result").innerText =
-"Please describe the email you want.";
+        if (input === "") {
 
-return;
+            document.getElementById("result").innerText =
+                "Please describe the email you want.";
+
+            return;
+
+        }
+
+        document.getElementById("result").innerText =
+            "This feature will be connected to AI soon.\n\nYour request:\n" + input;
+
+    };
 
 }
 
-document.getElementById("result").innerText =
-"This feature will be connected to AI soon.\n\nYour request:\n" + input;
-
-};
-
-</script>
-
-</body>
-</html>
+</script></body></html>
