@@ -1,123 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>AI Blog Writer - QuickAI</title>
-
-<link rel="stylesheet" href="style.css">
-<link rel="icon" href="favicon.svg">
-
-</head>
-
-<body>
-
-<header>
-
-<nav class="navbar">
-
-<div class="logo" id="logo">
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>AI Blog Writer - QuickAI</title><link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.svg"></head><body><header><nav class="navbar"><div class="logo" id="logo">
 ⚡ QuickAI
-</div>
+</div><div class="nav-links"><a id="homeNav" href="index.html">Home</a>
 
-<div class="nav-links">
+<a id="aboutNav" href="about.html">About</a>
 
-<a href="index.html">Home</a>
+<a id="pricingNav" href="pricing.html">Pricing</a>
 
-<a href="about.html">About</a>
+<a id="contactNav" href="contact.html">Contact</a>
 
-<a href="contact.html">Contact</a>
+</div><div class="top-buttons"><button id="themeBtn">🌙</button>
 
-</div>
-
-<div class="top-buttons">
-
-<button id="themeBtn">🌙</button>
 <button id="langBtn">العربية</button>
 
-</div>
-
-</nav>
-
-<section class="hero">
-
-<h1 id="pageTitle">
+</div></nav><section class="hero"><h1 id="pageTitle">
 AI Blog Writer
-</h1>
-
-<p id="pageDesc">
+</h1><p id="pageDesc">
 Generate blog posts using AI.
-</p>
-
-</section>
-
-</header>
-
-<main>
-
-<div class="card">
-
-<textarea id="blogInput" placeholder="Write your blog topic..."></textarea>
-
-<button id="generateBlogBtn">
+</p></section></header><main><div class="card"><textarea
+    id="blogInput"
+    placeholder="Write your blog topic..."
+></textarea><button id="generateBlogBtn">
 Generate Blog
-</button>
-
-<h2 id="resultTitle">
+</button><h2 id="resultTitle">
 Result
-</h2>
-
-<p id="blogResult">
+</h2><p id="blogResult">
 Your blog will appear here.
-</p>
+</p></div></main><footer><p><a href="about.html">About</a> |
 
-</div>
+<a href="pricing.html">Pricing</a> |
 
-</main>
-<footer>
-
-<p>
-<a href="about.html">About</a> |
 <a href="contact.html">Contact</a>
-</p>
 
-<p>© 2026 QuickAI - AI Tools Platform</p>
+</p><p>
+© 2026 QuickAI - AI Tools Platform
+</p></footer><script src="languages.js"></script><script src="script.js"></script><script>
 
-</footer>
+const generateBlogBtn =
+    document.getElementById("generateBlogBtn");
 
-<script src="languages.js"></script>
-<script src="script.js"></script>
+if (generateBlogBtn) {
 
-<script>
+    generateBlogBtn.onclick = function() {
 
-const generateBlogBtn = document.getElementById("generateBlogBtn");
+        const input =
+            document.getElementById("blogInput").value.trim();
 
-generateBlogBtn.onclick = function(){
+        if (input === "") {
 
-const input = document.getElementById("blogInput").value.trim();
+            document.getElementById("blogResult").innerText =
+                currentLang === "ar"
+                ? "يرجى كتابة موضوع للمقال."
+                : "Please enter a blog topic.";
 
-if(input === ""){
+            return;
 
-document.getElementById("blogResult").innerText =
-currentLang === "ar"
-? "يرجى كتابة موضوع للمقال."
-: "Please enter a blog topic.";
+        }
 
-return;
+        document.getElementById("blogResult").innerText =
+            currentLang === "ar"
+            ? "سيتم ربط هذه الأداة بالذكاء الاصطناعي قريبًا.\n\nموضوع المقال:\n" + input
+            : "This feature will be connected to AI soon.\n\nBlog topic:\n" + input;
+
+    };
 
 }
 
-document.getElementById("blogResult").innerText =
-currentLang === "ar"
-? "سيتم ربط هذه الأداة بالذكاء الاصطناعي قريبًا.\n\nموضوع المقال:\n" + input
-: "This feature will be connected to AI soon.\n\nBlog topic:\n" + input;
-
-};
-
-</script>
-
-</body>
-</html>
+</script></body></html>
