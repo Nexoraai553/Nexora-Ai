@@ -85,7 +85,9 @@ One subscription. Unlimited access to all AI tools.
 <li id="pro5">✔ Early access to new features</li>
 </ul>
 
-<button id="proBtn">Upgrade to Pro</button>
+<button id="proBtn" onclick="upgradeToPro()">
+    Upgrade to Pro
+</button>
 
 </div>
 
@@ -127,5 +129,31 @@ One subscription. Unlimited access to all AI tools.
 <script src="languages.js"></script>
 <script src="script.js"></script>
 
+<script>
+
+function upgradeToPro() {
+
+    if (currentLang === "ar") {
+
+        alert(
+            "اشتراك Pro\n\n" +
+            "خطة Pro جاهزة للاشتراك.\n" +
+            "سيتم إضافة الدفع الإلكتروني قريبًا."
+        );
+
+    } else {
+
+        alert(
+            "Pro Subscription\n\n" +
+            "Your Pro plan is ready.\n" +
+            "Online payment will be available soon."
+        );
+
+    }
+
+}
+
+</script>
+    
 </body>
 </html>
