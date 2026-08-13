@@ -181,6 +181,30 @@ setText("business4", t.pricing.business4);
 setText("business5", t.pricing.business5);
 setText("businessBtn", t.pricing.businessBtn);
 
+// ================= PRO PAGE =================
+
+if (document.getElementById("proPageTitle")) {
+
+    setText("proPageTitle", t.proPage.title);
+    setText("proPageDesc", t.proPage.description);
+
+    setText("proPlanTitle", t.proPage.planTitle);
+    setText("proPlanDesc", t.proPage.planDescription);
+
+    setText("proFeature1", t.proPage.feature1);
+    setText("proFeature2", t.proPage.feature2);
+    setText("proFeature3", t.proPage.feature3);
+    setText("proFeature4", t.proPage.feature4);
+    setText("proFeature5", t.proPage.feature5);
+
+    setText("paymentTitle", t.proPage.paymentTitle);
+    setText("paymentDesc", t.proPage.paymentDescription);
+    setText("paymentBtn", t.proPage.paymentButton);
+
+    setText("backBtn", t.proPage.backButton);
+
+}
+
 // ================= RTL =================
 
 if (lang === "ar") {
