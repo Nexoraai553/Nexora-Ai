@@ -98,7 +98,7 @@ en: {
         result: "Your translation will appear here."
     },
 
-    pricing: {
+        pricing: {
         title: "Pricing",
         description: "One subscription. Unlimited access to all AI tools.",
 
@@ -127,13 +127,34 @@ en: {
         business4: "✔ Premium support",
         business5: "✔ Admin dashboard",
         businessBtn: "Contact Sales"
+    },
+
+    proPage: {
+        title: "QuickAI Pro ⭐",
+        description: "Unlimited access to all QuickAI AI tools.",
+
+        planTitle: "Pro ⭐",
+        planDescription: "Get unlimited access to every AI tool.",
+
+        feature1: "✔ Unlimited AI requests",
+        feature2: "✔ Access to all AI tools",
+        feature3: "✔ Faster AI responses",
+        feature4: "✔ Priority support",
+        feature5: "✔ Early access to new features",
+
+        paymentTitle: "Payment",
+        paymentDescription: "Online payment will be available soon.",
+        paymentButton: "Payment Coming Soon",
+
+        backButton: "Back to Pricing"
     }
+
 },
 
 ar: {
-
-    home: {
-        logo: "⚡ كويك AI",
+    
+home: {
+     logo: "⚡ كويك AI",
         title: "مساعدك الذكي لكل شيء",
         description: "أنشئ واكتب وطوّر أعمالك باستخدام أدوات الذكاء الاصطناعي.",
 
@@ -257,7 +278,29 @@ ar: {
         business4: "✔ دعم مميز",
         business5: "✔ لوحة تحكم للإدارة",
         businessBtn: "تواصل مع المبيعات"
-    }
+    },
+        
+    proPage: {
+
+title: "QuickAI Pro ⭐",
+description: "وصول غير محدود إلى جميع أدوات QuickAI للذكاء الاصطناعي.",
+
+planTitle: "Pro ⭐",
+planDescription: "احصل على وصول غير محدود إلى جميع أدوات الذكاء الاصطناعي.",
+
+feature1: "✔ طلبات ذكاء اصطناعي غير محدودة",
+feature2: "✔ الوصول إلى جميع أدوات الذكاء الاصطناعي",
+feature3: "✔ استجابات أسرع",
+feature4: "✔ دعم ذو أولوية",
+feature5: "✔ الوصول المبكر إلى الميزات الجديدة",
+
+paymentTitle: "الدفع",
+paymentDescription: "سيكون الدفع الإلكتروني متاحًا قريبًا.",
+paymentButton: "الدفع قريبًا",
+
+backButton: "العودة إلى الأسعار"
+
+},
 }
 
 };
